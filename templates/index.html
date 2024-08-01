@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PSCRChatBot</title>
+</head>
+<body>
+{% if result %}
+      <p style="font-size:20px">{{result}}</p>
+      <br><br>
+{% endif %}
+<form method="post" action="/ask">
+    <label>Your Question</label> &nbsp;
+    <input type="text" name="question" placeholder="Type Exit to close"/>
+    <br>
+    <input type="submit" name="chat"/>
+
+</form>
+</body>
+</html>
